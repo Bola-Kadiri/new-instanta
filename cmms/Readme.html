@@ -1,0 +1,279 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block navbar %}
+{% endblock navbar %}
+
+{% block content %}
+
+
+
+<div class="process__form-container">
+    <fieldset class="process__form-div">
+      <input
+        type="password"
+        name="password"
+        id="password"
+        class="process__form-input password"
+        placeholder=" "
+        required
+      />
+      <label for="password" class="process__form-label"
+        >Password</label
+      >
+      <i class="bx bxs-low-vision password-show"></i>
+    </fieldset>
+    <fieldset class="process__form-div">
+      <input
+        type="password"
+        name="password_2"
+        id="confirmPassword"
+        class="process__form-input confirm-password"
+        placeholder=" "
+        required
+      />
+      <label for="confirmPassword" class="process__form-label"
+        >Confirm Password</label
+      >
+      <i class="bx bxs-low-vision confirm-password-show"></i>
+    </fieldset>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--==================== LOGIN CONTAINER ====================-->
+    <div class="login">
+      <section class="login__left login__left--landlord">
+        <div class="login__form login__form--landlord login__form--container">
+          <div class="login__form--logo">
+            <a href="{% url 'accomodation:index' %}" class="nav__logo">
+              <img
+                src="{% static 'asset/img/rent4less-logo-small.png' %}"
+                alt="rent4less-logo-small"
+              />
+            </a>
+          </div>
+          <div class="login__form--message">
+            <h2 class="color-green">WELCOME TO RENT4LESS!</h2>
+            <p>
+              Explore the endless possibilities of consistent earnings by
+              getting on our Guaranteed Rental Income Programme (GRIP) today by
+              <b>listing your Property.</b>
+            </p>
+          </div>
+          <div class="login__form--wrapper">
+            {% include 'snippets/messages.html' %}
+            <form action="{% url 'landlord' %}" autocomplete="off" class="process__form" method="POST">
+              {% csrf_token %}
+              <div class="process__form-container">
+                <fieldset class="process__form-div">
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="first_name"
+                    class="process__form-input"
+                    placeholder=" "
+                    required
+                  />
+                  <label for="first-name" class="process__form-label"
+                    >First Name</label
+                  >
+                </fieldset>
+                <fieldset class="process__form-div">
+                  <input
+                    type="text"
+                    id="last-name"
+                    name="last_name"
+                    class="process__form-input"
+                    placeholder=" "
+                    required
+                  />
+                  <label for="last-name" class="process__form-label"
+                    >Last Name</label
+                  >
+                </fieldset>
+              </div>
+              <div class="process__form-container">
+                <fieldset class="process__form-div">
+                  <input
+                    type="number"
+                    id="phone"
+                    name="phone_number"
+                    class="process__form-input"
+                    placeholder=" "
+                    required
+                  />
+                  <label for="phone" class="process__form-label"
+                    >Phone Number</label
+                  >
+                </fieldset>
+                <fieldset class="process__form-div">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="process__form-input"
+                    placeholder=" "
+                    required
+                  />
+                  <label for="email" class="process__form-label"
+                    >Email Address</label
+                  >
+                </fieldset>
+              </div>
+              <input
+                type="hidden"
+                name="country"
+                class="process__form-input"
+                placeholder=" "
+                value="NG"
+              />
+ 
+            <div class="process__form-container">
+              <fieldset class="process__form-div">
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  class="process__form-input password"
+                  placeholder=" "
+                  required
+                />
+                <label for="password" class="process__form-label"
+                  >Password</label
+                >
+                <i class="bx bxs-low-vision password-show"></i>
+              </fieldset>
+              <fieldset class="process__form-div">
+                <input
+                  type="password"
+                  name="password_2"
+                  id="confirmPassword"
+                  class="process__form-input confirm-password"
+                  placeholder=" "
+                  required
+                />
+                <label for="confirmPassword" class="process__form-label"
+                  >Confirm Password</label
+                >
+                <i class="bx bxs-low-vision confirm-password-show"></i>
+              </fieldset>
+            </div>
+              <fieldset class="process__form-div">
+                <input
+                  type="text"
+                  id="name"
+                  class="process__form-input"
+                  name="property_name"
+                  placeholder=" "
+                  required
+                />
+                <label for="name" class="process__form-label"
+                  >Estate Name</label
+                >
+              </fieldset>
+              <div class="process__form-container">
+                <fieldset class="process__form-div">
+                  <input
+                    type="text"
+                    id="location"
+                    name="property_location"
+                    class="process__form-input"
+                    placeholder=" "
+                    required
+                  />
+                  <label for="location" class="process__form-label"
+                    >Location of Estate</label
+                  >
+                </fieldset>
+                <fieldset class="process__form-div">
+                  <input
+                    type="number"
+                    id="flat"
+                    class="process__form-input"
+                    name="number_of_apartments"
+                    placeholder=" "
+                    required
+                  />
+                  <label for="flat" class="process__form-label"
+                    >Number of Apartment</label
+                  >
+                </fieldset>
+                <fieldset class="process__form-div">
+                  <input
+                    type="number"
+                    id="room"
+                    name="number_of_rooms"
+                    class="process__form-input"
+                    placeholder=" "
+                    required
+                  />
+                  <label for="room" class="process__form-label"
+                    >Number of Rooms</label
+                  >
+                </fieldset>
+              </div>
+              <fieldset class="process__form-div--textarea mb-3">
+                <textarea
+                  id="textarea"
+                  class="process__form-textarea"
+                  placeholder=" "
+                  name="description"
+                  rows="10"
+                ></textarea>
+                <label for="textarea" class="process__form-label"
+                  >Brief Description of Property</label
+                >
+              </fieldset>
+              <fieldset class="process__form-div col-lg-12">
+                <label for="apply-as" class="process__form-label">Apply as</label>
+                <select id="apply-as" name="type" class="process__form-select" required>
+                  <option value="Land">Landlord</option>
+                  <option value="Agent">Agent</option>
+                </select>
+              </fieldset>
+
+
+             
+              <button
+                type="submit"
+                class="button letter-spacing-1"
+              >
+                Submit
+              </button>
+            </form>
+            <span class="login__form--copy">&copy; 2022 Rent4Less</span>
+          </div>
+        </div>
+      </section>
+
+
+      {% include 'snippets/overlay_right.html' %}
+
+
+    </div>
+
+    <!--================ INLINE SCRIPT ===============-->
+    <script>
+      const spinnerWrapper = document.querySelector(".spinner-wrapper");
+
+      window.addEventListener("DOMContentLoaded", () => {
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        document.body.scrollTop = 0; // For Safari
+        spinnerWrapper.parentElement.removeChild(spinnerWrapper);
+      });
+    </script>
+
+    <script src="{% static 'asset/js/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'asset/js/signing.js' %}"></script>
+
+{% endblock content %}
