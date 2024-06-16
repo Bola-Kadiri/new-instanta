@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assets & Inventory</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+    <!-----CSS File-------->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+z24U8t2+94K9H7jGz4itd59YDD5F0a6wJwY8fN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/217dc9b060.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-section">
+        <div class="sidebar-image_text">
+          <span class="logo-details">
+            <img src="/cmms/assets/img/logo.png" alt="logo">
+          </span>
+          <div class="sidebar-text">
+            <span class="name">AlphaMead</span>
+            <span class="sub-name">Group
+              <i class="fa-solid fa-angle-down sidebar-text_icon"></i>
+            </span>
+          </div>
+        </div>
+        <i class="fa-solid fa-bars sidebarBtn"></i>
+      </div>
+  
+      <ul class="sidebar-nav" id="sidebar-nav">
+  
+        <li class="nav-item">
+          <a class="nav-link " href="/cmms/index.html">
+            <img src="https://instanta.alphamead.com/assets/icons/in-dashboard-icon-white.svg" alt="">
+            <span>Dashboard</span>
+          </a>
+        </li> 
+        <!-- End Dashboard Nav -->
+  
+        <li class="nav-item">
+          <a class="nav-link" data-bs-target="#components-nav" data-bs-toggle="collapse" href="index.html">
+            <img src="https://instanta.alphamead.com/assets/icons/in-workorder-icon-white.svg" alt=""><span>Work</span><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+            <li>
+              <a href="#">
+                Work Request
+              </a>
+            </li>
+            <li>
+              <a href="components-accordion.html">
+                Work Order
+              </a>
+            </li>
+            <li>
+              <a href="components-badges.html">
+                Pending PPM
+              </a>
+            </li>
+            <li>
+              <a href="#" data-bs-target="#bola" data-bs-toggle="collapse">
+                Requisition <i class="bi bi-chevron-down ms-auto"></i>
+              </a>
+              <div class="sample">
+                <div id="bola" class="try collapse">
+                  <span><a href="">Payment Requisition</a></span>
+                  <span><a href="">Bulk Payment</a></span>
+                  <span><a href="">Requisition</a></span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="components-badges.html">
+                <span>PPM Setting</span>
+              </a>
+            </li>
+            <li>
+              <a href="components-badges.html">
+                <span>Budget</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Components Nav -->
+  
+        <li class="nav-item">
+          <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+          <img src="https://instanta.alphamead.com/assets/icons/in-asset-icon-white.svg" alt=""><span>Asset & Inventory</span><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+            <li>
+              <a href="/cmms/Assets & Inventory/Asset Register/assets.html">
+              </i><span>Asset Register</span>
+              </a>
+            </li>
+            <li>
+              <a href="/cmms/Assets & Inventory/Inventory Register/inventory.html">
+                <span>Inventory Register</span>
+              </a>
+            </li>
+            <li>
+              <a href="/cmms/Assets & Inventory/Item Request/index.html">
+              <span>Item Request</span>
+              </a>
+            </li>
+            <li>
+              <a href="cmms\Assets & Inventory\Inventory Register\inventory.html">
+                <span>Inventory Adjustment</span>
+              </a>
+            </li>
+            <li>
+              <a href="/cmms/Assets & Inventory/Transfer Form/index.html">
+                <span>Transfer Form</span>
+              </a>
+            </li>
+            <li>
+              <a href="/cmms/Assets & Inventory/Movement History/index.html">
+                <span>Movement History</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-bs-target="#reports-nav" data-bs-toggle="collapse">
+                <span>Report</span><i class="bi bi-chevron-down ms-auto"></i>
+              </a>
+              <ul id="reports-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li><a href="/cmms/Assets & Inventory/Asset Report/index.html">Asset Performance Report</a></li>
+                <li><a href="/cmms/Assets & Inventory/Reports/Inventory Report/index.html">Inventory Summary Report</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" data-bs-target="#reference-nav" data-bs-toggle="collapse">
+                <span>Reference</span><i class="bi bi-chevron-down ms-auto"></i>
+              </a>
+              <ul id="reference-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li><a href="/cmms/Assets & Inventory/Reference/Category/index.html">Category</a></li>
+                <li><a href="/cmms/Assets & Inventory/Reference/Subcategory/index.html">Subcategory</a></li>
+                <li><a href="/cmms/Assets & Inventory/Reference/Model/index.html">Model</a></li>
+                <li><a href="/cmms/Assets & Inventory/Reference/Manufacturer/index.html">Manufacturer</a></li>
+                <li><a href="/cmms/Assets & Inventory/Reference/Warehouse/index.html">Warehouse</a></li>
+                <li><a href="/cmms/Assets & Inventory/Reference/Unit of Measurement/index.html">Unit of Measurement</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <!-- End Forms Nav -->
+  
+        <li class="nav-item">
+          <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+          <img src="https://instanta.alphamead.com/assets/icons/in-procurement-icon-white.svg" alt=""><span>Procurement</span><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+            <li>
+              <a href="#">
+                <span>General Tables</span>
+              </a>
+            </li>
+            <li>
+              <a href="tables-data.html">
+              <span>Data Tables</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Tables Nav -->
+  
+        <li class="nav-item">
+          <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+          <img src="https://instanta.alphamead.com/assets/icons/in-lease-icon-white.svg" alt=""><span>Lease</span><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+            <li>
+              <a href="/cmms/Lease/Lease/index.html">
+              <span>Chart.js</span>
+              </a>
+            </li>
+            <li>
+              <a href="/cmms/Lease/Lease Invoice/index.html">
+              <span>ApexCharts</span>
+              </a>
+            </li>
+            <li>
+              <a href="charts-echarts.html">
+                <span>ECharts</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Charts Nav -->
+  
+        <li class="nav-item">
+          <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
+            <img src="https://instanta.alphamead.com/assets/icons/in-service-charge-icon-white.svg" alt=""><span>Service & Power Charge</span><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+            <li>
+              <a href="icons-bootstrap.html">
+              <span>Bootstrap Icons</span>
+              </a>
+            </li>
+            <li>
+              <a href="icons-remix.html">
+                <i class="bi bi-circle"></i><span>Remix Icons</span>
+              </a>
+            </li>
+            <li>
+              <a href="icons-boxicons.html">
+                <i class="bi bi-circle"></i><span>Boxicons</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Icons Nav -->
+  
+  
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="users-profile.html">
+            <img src="https://instanta.alphamead.com/assets/icons/in-visitor-icon-white.svg" alt=""><span>Visitor</span>
+          </a>
+        </li>
+        <!-- End Profile Page Nav -->
+  
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="pages-faq.html">
+            <img src="https://instanta.alphamead.com/assets/icons/in-space-booking-icon-white.svg" alt=""><span>Space Booking</span>
+          </a>
+        </li>
+        <!-- End F.A.Q Page Nav -->
+  
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="pages-contact.html">
+            <img src="https://instanta.alphamead.com/assets/icons/in-facility-icon-white.svg" alt=""><span>Facility</span>
+          </a>
+        </li>
+        <!-- End Contact Page Nav -->
+  
+        <li class="nav-item">
+          <a class="nav-link collapsed" data-bs-target="#report-nav" data-bs-toggle="collapse" href="#">
+            <img src="https://instanta.alphamead.com/assets/icons/in-report-icon-white.svg" alt="">
+            <span>Report</span><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul id="report-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+            <li>
+              <a href="/cmms/Report/Scheduled Report/index.html">
+              </i><span>Scheduled Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="/cmms/Report/User Facility Report/index.html">
+                <span>User Facility Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="/cmms/Report/User Audit Report/index.html">
+              <span>User Audit Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="/cmms/Report/Usage Report/index.html">
+                <span>Usage Report</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Register Page Nav -->
+  
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="pages-login.html">
+            <img src="https://instanta.alphamead.com/assets/icons/in-reference-icon-white.svg" alt=""><span>Reference</span>
+          </a>
+        </li>
+        <!-- End Login Page Nav -->
+      </ul>
+  
+    </aside>
+      <!-- End Sidebar -->
+
+
+      <!---------Main content--------------->
+      <main id="main" class="main">
+        <!----------Header Section----------------->
+        <header class="header">
+          <nav>
+            <h3>Navbar</h3>
+          </nav>
+        </header>
+
+        <!------Lease Heading---------->
+        <div class="lease-heading">
+          <div class="lease-heading_text">
+            <i class="fa-solid fa-sliders filter-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Filter"></i>
+            <span>
+              <i class="fa-solid fa-magnifying-glass" onclick="searchTable()"></i>
+              <input type="search" id="searchInput" placeholder="Search leases...">
+            </span>
+            <h3><a href="">Leases</a></h3>
+          </div>
+          <div class="lease-heading_icons">
+            <i class="fa-solid fa-list" data-bs-toggle="tooltip" data-bs-placement="bottom" title="List view"></i>
+            <i class="fa-solid fa-table-cells" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Table view"></i>
+          </div>
+        </div>
+
+        <div class="empty-div"></div>
+
+          <!--------Lease Main Content------------------->
+
+          <div class="lease-main_content">
+            <div class="lease-sidebar">
+              <h5>Leases</h5>
+              <div class="lease-sidebar_controls">
+                <button>
+                  <i class="fa-solid fa-plus"></i>
+                  <span id="load-button" data-bs-toggle="modal" data-bs-target="#ExtralargeModal">New</span>
+                </button>
+                <i class="fa-solid fa-arrow-up-right-from-square export-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Export"></i>
+              </div>
+
+              <div class="lease-sidebar_content" data-id="1">
+                <div class="lease-number_date">
+                  <span>0000394</span>
+                  <h6 class="lease-date">Lekki Services</h6>
+                </div>
+                <div class="lease-location_status">
+                  <h6>Rent4Less</h6>
+                  <h6>Running</h6>
+                </div>
+              </div>
+            </div>
+            <i class="fa-solid fa-bars lease-sidebarBtn"></i>
+
+            <!----------Lease Body Content-------------->
+
+            <div class="lease-main_body">
+              <div class="default-image" id="default-image">
+                <img src="/cmms/assets/img/in-empty-details-icon.svg" alt="">
+                <h3>Your leases are sleeping!</h3>
+                <p>Click on them</p>
+              </div>
+
+              <div class="lease-body_content">
+                <div class="lease-type">
+                  <div class="lease-type_header">
+                    <h4>Detail</h4>
+                    <h5 data-bs-toggle="collapse" data-bs-target="#lease-detail">Click to collapse</h5>
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </div>
+                  <div id="lease-detail">
+                    <hr>
+                    <h6>About</h6>
+                    <div class="lease-type_details">
+                      <div class="lease-details">
+                        <h4>Client</h4>
+                        <p id="lease-client"></p>
+                      </div>
+
+                      <div class="lease-details">
+                        <h4>Contact name</h4>
+                        <p id="lease-name"></p>
+                      </div>
+
+                      <div class="lease-details">
+                        <h4>Contact email</h4>
+                        <p id="lease-email"></p>
+                      </div>
+
+                      <div class="lease-details">
+                        <h4>Contact phone</h4>
+                        <p id="lease-phone"></p>
+                      </div>
+
+                      <div class="lease-details">
+                        <h4>Contract number</h4>
+                        <p></p>
+                      </div>
+
+                      <div class="lease-details">
+                        <h4>Solicitor</h4>
+                        <p></p>
+                      </div>
+
+                      <div class="lease-details">
+                        <h4>Agency</h4>
+                        <p></p>
+                      </div>
+
+                      <div class="lease-details">
+                        <h4>Status</h4>
+                        <p id="lease-status"></p>
+                      </div>
+                    </div>
+
+                    <h6>Lease/invoice period</h6>
+                    <div class="lease-type_details">
+                      <div class="lease-details lease-type-two">
+                        <h4>Start date</h4>
+                        <p>17/10/2022</p>
+                      </div>
+
+                      <div class="lease-type-two">
+                        <h4>End date</h4>
+                        <p>16/06/2024</p>
+                      </div>
+
+                      <div class="lease-type-two">
+                        <h4>Auto extend</h4>
+                        <p>Yes</p>
+                      </div>
+
+                      <div class="lease-type-two">
+                        <h4>Extend by</h4>
+                        <p>1 Month</p>
+                      </div>
+
+                      <div class="lease-type-two">
+                        <h4>Auto create invoice</h4>
+                        <p>Yes</p>
+                      </div>
+
+                      <div class="lease-type-two">
+                        <h4>Invoice start date</h4>
+                        <p>2022-11-16</p>
+                      </div>
+
+                      <div class="lease-type-two">
+                        <h4>Invoice frequency</h4>
+                        <p>2 Weeks</p>
+                      </div>
+                    </div>
+
+                    <h6>Notification setting</h6>
+                    <div class="lease-type_details">
+                      <div class="lease-details">
+                        <h4>Before expiry</h4>
+                        <p>2 Week(s)</p>
+                      </div>
+
+                      <div class="lease-details">
+                        <h4>Send reminder every</h4>
+                        <p>2 Week(s)</p>
+                      </div>
+                    </div>
+
+                    <div class="lease-type_details">
+                      <div class="lease-details">
+                        <h4>Remark</h4>
+                        <p>KINDLY BE REMINDED OF YOUR SUBSCRIPTION RENEWAL PAYMENT. PLEASE MAKE PAYMENT BEFORE THE DUE DATE VIA THE LINK https://paystack.com/pay/rent4less, FAILURE TO WHICH WE MIGHT RECOVER POSSESSION.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="lease-type">
+                  <div class="lease-type_header">
+                    <h4>Apartment/Room <i>(1)</i></h4>
+                    <h5 data-bs-toggle="collapse" data-bs-target="#lease-room">Click to collapse</h5>
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </div>
+                  <div id="lease-room">
+                    <hr>
+
+                    <div class="lease-sub_type">
+                      <div class="lease-type_header">
+                        <h4><span style="color: green;">#1</span>  Lekki Service Flats(Southern View Estate) /</h4>
+                        <h5 data-bs-toggle="collapse" data-bs-target="#lease-service">Click to collapse</h5>
+                        <i class="fa-solid fa-chevron-left"></i>
+                      </div>
+                      <div id="lease-service">
+                        <hr>
+                        <h6>Apartment/room detail</h6>
+                        <div class="lease-type_details">
+                          <div class="lease-details">
+                            <h4>Facility/Location</h4>
+                            <p>Lekki Service Flats(Southern<br> View Estate)</p>
+                          </div>
+
+                          <div class="lease-details">
+                            <h4>Apartment/Room</h4>
+                            <p>LSF484M - 5 Bedroom Apartments</p>
+                          </div>
+                        </div>
+
+                        <h6>Occupant detail</h6>
+                        <div class="lease-type_details">
+                          <div class="lease-details">
+                            <h4>Customer Id</h4>
+                            <p></p>
+                          </div>
+
+                          <div class="lease-details">
+                            <h4>Name</h4>
+                            <p>OLUWATOMIWA AHMED MOROMOKE</p>
+                          </div>
+
+                          <div class="lease-details">
+                            <h4>Phone</h4>
+                            <p>07018226594</p>
+                          </div>
+
+                          <div class="lease-details">
+                            <h4>Email</h4>
+                            <p>moromokeahmed55@yahoo.com</p>
+                          </div>
+                        </div>
+                        <div class="lease-sub_type lease-fees">
+                          <div class="lease-type_header">
+                            <h4>Fees</h4>
+                            <h5 data-bs-toggle="collapse" data-bs-target="#lease-fee">Click to collapse</h5>
+                            <i class="fa-solid fa-chevron-left"></i>
+                          </div>
+      
+                          <div id="lease-fee">
+                            <div class="lease-item_table">
+                              <table class="lease-table">
+                                <thead>
+                                  <tr>
+                                    <th>#</th>
+                                    <th>Fee</th>
+                                    <th>Currency</th>
+                                    <th>Amount</th>
+                                    <th>Discount (Amount)</th>
+                                    <th>Deductible</th>
+                                    <th>Remittance</th>
+                                  </tr>
+                                </thead>
+          
+                                <tbody>
+                                  <tr>
+                                    <td>1</td>
+                                    <td>Monthly Rent</td>
+                                    <td>NGN</td>
+                                    <td>62,000</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>62,000</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+      
+                              <div class="lease-total">
+                  
+                                <div class="lease-total-name">
+                                  <h3>Total <i class="fa-solid fa-angles-right"></i></h3>
+                                </div>
+                    
+                                <div class="lease-total-quantity">
+                                  <p>Amount</p>
+                                  <h3>NGN 62,000</h3>
+                                </div>
+      
+                                <div class="lease-total-quantity">
+                                  <p>Discount</p>
+                                  <h3>NGN 0</h3>
+                                </div>
+                    
+                                <div class="lease-total-amount">
+                                  <p>Payable</p>
+                                  <h3>NGN 62,000</h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="lease-type">
+                  <div class="lease-type_header">
+                    <h4>Documents <i>(0)</i></h4>
+                    <h5 data-bs-toggle="collapse" data-bs-target="#lease-document">Click to collapse</h5>
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </div>
+                  <div id="lease-document">
+                    <hr>
+                    <div class="lease-item">
+                      <div class="lease-modal_image">
+                        <img src="/cmms/assets/img/movement-history.svg" alt="">
+                        <p>No strings attached!</p>
+                        <h6>Attach something.</h6>
+                      </div>
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <div class="lease-type">
+                  <div class="lease-type_header">
+                    <h4>Invoices <i>(5)</i></h4>
+                    <h5 data-bs-toggle="collapse" data-bs-target="#lease-invoice">Click to collapse</h5>
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </div>
+                  <div id="lease-invoice">
+                    <hr>
+                    <div class="lease-item_table">
+                      <table class="lease-table">
+                        <thead>
+                          <tr>
+                            <th>Invoice No.</th>
+                            <th>Invoice date</th>
+                            <th>Amount invoiced</th>
+                            <th>Amount paid</th>
+                            <th>Balance</th>
+                            <th>Status</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>LSF/00000394/16112022</td>
+                            <td>16/11/2022</td>
+                            <td>NGN 66,650</td>
+                            <td></td>
+                            <td>NGN 66,650</td>
+                            <td>Payment Pending</td>
+                          </tr>
+
+                          <tr>
+                            <td>LSF/00000394/16112022</td>
+                            <td>16/11/2022</td>
+                            <td>NGN 66,650</td>
+                            <td></td>
+                            <td>NGN 66,650</td>
+                            <td>Payment Pending</td>
+                          </tr>
+
+                          <tr>
+                            <td>LSF/00000394/16112022</td>
+                            <td>16/11/2022</td>
+                            <td>NGN 66,650</td>
+                            <td></td>
+                            <td>NGN 66,650</td>
+                            <td>Payment Pending</td>
+                          </tr>
+
+                          <tr>
+                            <td>LSF/00000394/16112022</td>
+                            <td>16/11/2022</td>
+                            <td>NGN 66,650</td>
+                            <td></td>
+                            <td>NGN 66,650</td>
+                            <td>Payment Pending</td>
+                          </tr>
+
+                          <tr>
+                            <td>LSF/00000394/16112022</td>
+                            <td>16/11/2022</td>
+                            <td>NGN 66,650</td>
+                            <td></td>
+                            <td>NGN 66,650</td>
+                            <td>Payment Pending</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <div class="lease-type">
+                  <div class="lease-type_header">
+                    <h4>Remittances <i>(0)</i></h4>
+                    <h5 data-bs-toggle="collapse" data-bs-target="#lease-remit">Click to collapse</h5>
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </div>
+                  <div id="lease-remit">
+                    <hr>
+                    <div class="lease-item">
+                      <div class="lease-modal_image">
+                        <img src="/cmms/assets/img/movement-history.svg" alt="">
+                        <p>Your remittances will appear here</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <div class="lease-type">
+                  <div class="lease-type_header">
+                    <h4>History <i>(5)</i></h4>
+                    <h5 data-bs-toggle="collapse" data-bs-target="#lease-history">Click to collapse</h5>
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </div>
+                  <div id="lease-history">
+                    <hr>
+                    <div class="lease-item_table">
+                      <table class="lease-table">
+                        <thead>
+                          <tr>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>User</th>
+                            <th>Action</th>
+                            <th>Detail</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>11/03/2022</td>
+                            <td>02:15 PM</td>
+                            <td>olusola.ajayi@alphamead.com</td>
+                            <td>FIRST SUBMITTED</td>
+                            <td>FIRST SUBMITTED</td>
+                          </tr>
+
+                          <tr>
+                            <td>04/04/2022</td>
+                            <td>04:59 PM</td>
+                            <td>olusola.ajayi@alphamead.com</td>
+                            <td>FIRST SUBMITTED</td>
+                            <td>Added approval request User | Kunle Adebiyi</td>
+                          </tr>
+
+                          <tr>
+                            <td>07/04/2022</td>
+                            <td>03:28 PM</td>
+                            <td>olusola.ajayi@alphamead.com</td>
+                            <td>FIRST SUBMITTED</td>
+                            <td>Changed declined to N</td>
+                          </tr>
+
+                          <tr>
+                            <td>07/04/2022</td>
+                            <td>03:28 PM</td>
+                            <td>olusola.ajayi@alphamead.com</td>
+                            <td>FIRST SUBMITTED</td>
+                            <td>Changed declined to N</td>
+                          </tr>
+
+                          <tr>
+                            <td>07/04/2022</td>
+                            <td>03:28 PM</td>
+                            <td>olusola.ajayi@alphamead.com</td>
+                            <td>FIRST SUBMITTED</td>
+                            <td>Changed declined to N</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+
+          <!----------Modal for a new lease----------->
+          <div class="modal fade" id="ExtralargeModal" tabindex="-1">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">New lease</h5>
+                  <div class="modal-buttons">
+                    <button>
+                      <i class="fa-solid fa-check"></i>
+                      Done
+                    </button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                </div>
+    
+                <div class="modal-body">
+                  <div class="modal-content">
+    
+                    <div class="modal-content_header" onmouseover="showIcons()" onmouseout="hideIcons()">
+                      <h4>Detail</h4>
+                      <h5 data-bs-toggle="collapse" data-bs-target="#lease-modal_detail">Click to collapse</h5>
+                      <div class="modal-content_header-icons">
+                        <i class="fa-solid fa-expand fullscreen" onclick="toggleModalSize()" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Fullscreen"></i>
+                        <i class="fa-solid fa-window-minimize minimized" onclick="toggleMiniSize()" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Minimize"></i> 
+                      </div>
+                      <i class="fa-solid fa-chevron-left arrow" onmouseover="showIcons()" onmouseout="hideIcons()"></i>
+                    </div>
+    
+                    
+                    <div id="lease-modal_detail">
+                      <hr>
+    
+                      <div class="modal-content_body">
+                        <h5>About</h5>
+                        <form action="">
+                          <div class="lease-content_forms">
+                            <div class="lease-content_input">
+                              <label for="client">Client</label><br>
+                              <select name="client" id="client">
+                                <option value="select">--Select--</option>
+                              </select>
+                            </div>
+        
+                              <div class="lease-content_input">
+                                <label for="contact-name">Contact name</label><br>
+                                <select name="contact-name" id="contact-name">
+                                  <option value="select">--Select--</option>
+                                </select>
+                              </div>
+        
+                              <div class="lease-content_input">
+                                <label for="email">Contact email</label><br>
+                                <input type="text" name="email" id="email" placeholder="E.g johndoe@example.com">
+                              </div>
+        
+                              <div class="lease-content_input">
+                                <label for="contact-phone">Contact phone</label><br>
+                                <input type="text" name="contact-phone" id="contact-phone" placeholder="E.g 0801234567890">
+                              </div>
+
+                              <div class="lease-content_input">
+                                <label for="contract-number">Contract number</label><br>
+                                <input type="text" name="contract-number" id="contract-number" placeholder="E.g 1234567-ABC">
+                              </div>
+
+                              <div class="lease-content_input">
+                                <label for="solicitor">Solicitor</label><br>
+                                <select name="solicitor" id="solicitor">
+                                  <option value="select">Select</option>
+                                </select>
+                              </div>
+
+                              <div class="lease-content_input">
+                                <label for="agency">Agency</label><br>
+                                <select name="agency" id="agency">
+                                  <option value="select">Select</option>
+                                </select>
+                              </div>
+
+                              <div class="lease-content_input">
+                                <label for="status">Status</label><br>
+                                <select name="status" id="status">
+                                  <option value="select">Select</option>
+                                </select>
+                              </div>
+                            
+                          </div>
+                          
+                          
+                        </form>
+      
+                      </div>
+
+                      <div class="modal-content_body">
+                        <h5>Lease/invoice period</h5>
+                        <form action="">
+                          <div class="lease-content_forms">
+                            <div class="lease-content_input anomaly">
+                              <label for="start-date">Start date</label><br>
+                              <input type="date" name="start-date" id="start-date">
+                            </div>
+      
+                            <div class="lease-content_input">
+                              <label for="end-date">End date</label><br>
+                              <input type="date" name="end-date" id="end-date">
+                            </div>
+      
+                            <div class="lease-content_input extend-input">
+                              <input type="checkbox" name="extend" id="extend">
+                              <label for="extend">Auto extend</label>
+                            </div>
+      
+                            <div class="lease-content_input invoice-input">
+                              <input type="checkbox" name="invoice" id="invoice">
+                              <label for="invoice">Auto create invoice</label>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+
+                      <div class="modal-content_body">
+                        <h5>Notification setting</h5>
+                        <form action="">
+                          <div class="lease-content_forms">
+                            <div class="lease-content_input">
+                              <label for="expiry">Before expiry</label><br>
+                              <input type="text" name="expiry" id="expiry">
+                              <select name="status" id="status">
+                                <option value="select">Select</option>
+                              </select>
+                            </div>
+      
+                            <div class="lease-content_input">
+                              <label for="remainder">Send remainder every</label><br>
+                              <input type="text" name="remainder" id="remainder">
+                              <select name="status" id="status">
+                                <option value="select">Select</option>
+                              </select>
+                            </div> 
+                          </div>
+                        </form>
+                      </div>
+
+                      <div class="modal-content_body">
+                        <form action="">
+                          <div class="lease-content_input">
+                            <label for="remark">Remark</label><br>
+                            <input type="text" name="remark" id="remark">
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!---------Apartment section of the modal---------------->
+                    <div class="modal-content item-modal">
+
+                      <div class="modal-content_header" onmouseover="showIcons()" onmouseout="hideIcons()">
+                        <h4>Apartment/Room <i>(0)</i></h4>
+                        <h5 data-bs-toggle="collapse" data-bs-target="#lease-modal-apartment">Click to collapse</h5>
+                        <div class="modal-content_header-icons">
+                          <i class="fa-solid fa-expand fullscreen" onclick="toggleModalSize()" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Fullscreen"></i>
+                          <i class="fa-solid fa-window-minimize minimized" onclick="toggleMiniSize()" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Minimize"></i> 
+                        </div>
+                        <i class="fa-solid fa-chevron-left arrow" onmouseover="showIcons()" onmouseout="hideIcons()"></i>
+                      </div>
+    
+                      <div class="item-modal_body collapse" id="lease-modal-apartment">
+                        <div class="lease-modal_add">
+                          <button>
+                            <i class="fa-solid fa-plus"></i>
+                            <span>Add Apartment/Room</span>
+                          </button>
+                        </div>
+                        <div class="lease-modal_image">
+                          <img src="/cmms/assets/img/movement-history.svg" alt="">
+                          <p>I've not been keeping track!</p>
+                        </div>
+                      </div>
+    
+                    </div>
+
+
+                    <!------------Document section of the modal-------------------->
+                    <div class="modal-content item-modal">
+
+                      <div class="modal-content_header" onmouseover="showIcons()" onmouseout="hideIcons()">
+                        <h4>Documents <i>(0)</i></h4>
+                        <h5 data-bs-toggle="collapse" data-bs-target="#lease-modal-approval">Click to collapse</h5>
+                        <div class="modal-content_header-icons">
+                          <i class="fa-solid fa-expand fullscreen" onclick="toggleModalSize()" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Fullscreen"></i>
+                          <i class="fa-solid fa-window-minimize minimized" onclick="toggleMiniSize()" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Minimize"></i> 
+                        </div>
+                        <i class="fa-solid fa-chevron-left arrow" onmouseover="showIcons()" onmouseout="hideIcons()"></i>
+                      </div>
+    
+                      <div class="item-modal_body collapse" id="lease-modal-approval">
+                        <div class="lease-modal_add">
+                          <button>
+                            <i class="fa-solid fa-plus"></i>
+                            <span>Add document</span>
+                          </button>
+                        </div>
+                        <div class="lease-modal_image">
+                          <img src="/cmms/assets/img/movement-history.svg" alt="">
+                          <p>No strings attached!</p>
+                          <h6>Attach something.</h6>
+                        </div>
+                      </div>
+    
+                    </div>
+
+
+                    
+                
+                    <!------------Remittance Section of the modal----------------->
+                    <div class="modal-content item-modal">
+
+                      <div class="modal-content_header" onmouseover="showIcons()" onmouseout="hideIcons()">
+                      <h4>Remittances <i>(0)</i></h4>
+                      <h5 data-bs-toggle="collapse" data-bs-target="#lease-modal-remit">Click to collapse</h5>
+                      <div class="modal-content_header-icons">
+                        <i class="fa-solid fa-expand fullscreen" onclick="toggleModalSize()" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Fullscreen"></i>
+                        <i class="fa-solid fa-window-minimize minimized" onclick="toggleMiniSize()" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Minimize"></i> 
+                      </div>
+                      <i class="fa-solid fa-chevron-left arrow" onmouseover="showIcons()" onmouseout="hideIcons()"></i>
+                      </div>
+    
+                      <div class="item-modal_body collapse" id="lease-modal-remit">
+                        <div class="lease-modal_image">
+                          <img src="/cmms/assets/img/movement-history.svg" alt="">
+                          <p>Your remittances will appear here.</p>
+                        </div>
+                      </div>
+    
+                    </div>
+                </div>
+                
+              </div>
+            </div>
+            </div> 
+      </main>
+      
+      <script src="script.js"></script>
+    </body>
+</html>
