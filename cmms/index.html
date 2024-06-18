@@ -97,11 +97,11 @@
       </li><!-- End Components Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+        <a class="nav-link collapsed" data-bs-target="#assets-nav" data-bs-toggle="collapse" href="#">
         <img src="https://instanta.alphamead.com/assets/icons/in-asset-icon-white.svg" alt="">
         <span>Asset & Inventory</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <ul id="assets-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
             <a href="/cmms/Assets & Inventory/Asset Register/assets.html">
              </i><span>Asset Register</span>
@@ -132,20 +132,20 @@
               <span>Movement History</span>
             </a>
           </li>
-          <li>
-            <a href="#" data-bs-target="#reports-nav" data-bs-toggle="collapse">
+          <li id="assets-report">
+            <a href="#" data-bs-target="#reports-asset-nav" data-bs-toggle="collapse">
               <span>Report</span><i class="bi bi-chevron-down ms-auto"></i>
             </a>
-            <ul id="reports-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+            <ul id="reports-asset-nav" class="nav-content collapse " data-bs-parent="#assets-report">
               <li><a href="/cmms/Assets & Inventory/Reports/Asset Report/index.html">Asset Performance Report</a></li>
               <li><a href="/cmms/Assets & Inventory/Reports/Inventory Report/index.html">Inventory Summary Report</a></li>
             </ul>
           </li>
-          <li>
+          <li id="assets-reference">
             <a href="#" data-bs-target="#reference-nav" data-bs-toggle="collapse">
               <span>Reference</span><i class="bi bi-chevron-down ms-auto"></i>
             </a>
-            <ul id="reference-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+            <ul id="reference-nav" class="nav-content collapse " data-bs-parent="#assets-reference">
               <li><a href="/cmms/Assets & Inventory/Reference/Category/index.html">Category</a></li>
               <li><a href="/cmms/Assets & Inventory/Reference/Subcategory/index.html">Subcategory</a></li>
               <li><a href="/cmms/Assets & Inventory/Reference/Model/index.html">Model</a></li>
@@ -181,19 +181,36 @@
         </a>
         <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="charts-chartjs.html">
-             <span>Chart.js</span>
+            <a href="/cmms/Lease/Lease/index.html">
+             <span>Lease</span>
             </a>
           </li>
           <li>
-            <a href="charts-apexcharts.html">
-             <span>ApexCharts</span>
+            <a href="/cmms/Lease/Lease Invoice/index.html">
+             <span>Lease Invoice</span>
             </a>
           </li>
-          <li>
-            <a href="charts-echarts.html">
-              <span>ECharts</span>
+          <li id="lease-reference">
+            <a class="nav-link collapsed" data-bs-target="#lease-nav" data-bs-toggle="collapse" href="#">
+              <span>Lease Reference</span><i class="bi bi-chevron-down ms-auto"></i>
             </a>
+            <ul id="lease-nav" class="nav-content collapse " data-bs-parent="#lease-reference">
+              <li>
+                <a href="/cmms/Lease/Lease Reference/Agency/index.html">
+                 <span>Agency</span>
+                </a>
+              </li>
+              <li>
+                <a href="/cmms/Lease/Lease Reference/Solicitor/index.html">
+                  <span>Solicitor</span>
+                </a>
+              </li>
+              <li>
+                <a href="/cmms/Lease/Lease Reference/Fee Type/index.html">
+                  <span>Fee Type</span>
+                </a>
+              </li>
+            </ul>
           </li>
         </ul>
       </li><!-- End Charts Nav -->
@@ -241,15 +258,121 @@
       </li><!-- End Contact Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-register.html">
-          <img src="https://instanta.alphamead.com/assets/icons/in-report-icon-white.svg" alt=""><span>Report</span>
+        <a class="nav-link collapsed" data-bs-target="#report-nav" data-bs-toggle="collapse" href="#">
+          <img src="https://instanta.alphamead.com/assets/icons/in-report-icon-white.svg" alt="">
+          <span>Report</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
+        <ul id="report-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="/cmms/Report/Scheduled Report/index.html">
+             </i><span>Scheduled Report</span>
+            </a>
+          </li>
+          <li>
+            <a href="/cmms/Report/User Facility Report/index.html">
+              <span>User Facility Report</span>
+            </a>
+          </li>
+          <li>
+            <a href="/cmms/Report/User Audit Report/index.html">
+             <span>User Audit Report</span>
+            </a>
+          </li>
+          <li>
+            <a href="/cmms/Report/Usage Report/index.html">
+              <span>Usage Report</span>
+            </a>
+          </li>
+        </ul>
       </li><!-- End Register Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-login.html">
-          <img src="https://instanta.alphamead.com/assets/icons/in-reference-icon-white.svg" alt=""><span>Reference</span>
+        <a class="nav-link collapsed" data-bs-target="#reference-nav" data-bs-toggle="collapse" href="#">
+          <img src="https://instanta.alphamead.com/assets/icons/in-reference-icon-white.svg" alt="">
+          <span>Reference</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
+        <ul id="reference-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="/cmms/Reference/User Management/index.html">
+             </i><span>User Management</span>
+            </a>
+          </li>
+          <li>
+            <a href="/cmms/Reference/Personnel/index.html">
+              <span>Personnel</span>
+            </a>
+          </li>
+          <li>
+            <a href="/cmms/Reference/Vendor/index.html">
+             <span>Vendor</span>
+            </a>
+          </li>
+          <li>
+            <a href="/cmms/Reference/Client/index.html">
+              <span>Client</span>
+            </a>
+          </li>
+          <li>
+            <a href="/cmms/Reference/Category/index.html">
+              <span>Category</span>
+            </a>
+          </li>
+          <li>
+            <a href="/cmms/Reference/Department/index.html">
+              <span>Department</span>
+            </a>
+          </li>
+          <li>
+            <a href="/cmms/Reference/Bank account/index.html">
+              <span>Bank account</span>
+            </a>
+          </li>
+          <li>
+            <a href="/cmms/Reference/Unit of Measurement/index.html">
+              <span>Unit of Measurement</span>
+            </a>
+          </li>
+          <li id="settings" class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#settings-nav" data-bs-toggle="collapse" href="#">
+              <span>Setting</span><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="settings-nav" class="nav-content collapse " data-bs-parent="#settings">
+              <li>
+                <a href="/cmms/Reference/Settings/Alert Settings/index.html">
+                 </i><span>Alert Setting</span>
+                </a>
+              </li>
+              <li>
+                <a href="/cmms/Reference/Settings/Escalation Settings/index.html">
+                  <span>Escalation Setting</span>
+                </a>
+              </li>
+              <li>
+                <a href="/cmms/Reference/Settings/SLA Settings/index.html">
+                 <span>SLA Setting</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li id="data" class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#data-nav" data-bs-toggle="collapse" href="#">
+              <span>Data Import</span><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="data-nav" class="nav-content collapse " data-bs-parent="#data">
+              <li>
+                <a href="/cmms/Reference/Data Import/Facility/index.html">
+                 </i><span>Facility</span>
+                </a>
+              </li>
+              <li>
+                <a href="/cmms/Reference/Data Import/Inventory/index.html">
+                  <span>Inventory</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          
+        </ul>
       </li><!-- End Login Page Nav -->
     </ul>
 

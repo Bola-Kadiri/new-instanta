@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assets & Inventory</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+    <!-----CSS File-------->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+z24U8t2+94K9H7jGz4itd59YDD5F0a6wJwY8fN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/217dc9b060.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-section">
+        <div class="sidebar-image_text">
+          <span class="logo-details">
+            <img src="/cmms/assets/img/logo.png" alt="logo">
+          </span>
+          <div class="sidebar-text">
+            <span class="name">AlphaMead</span>
+            <span class="sub-name">Group
+              <i class="fa-solid fa-angle-down sidebar-text_icon"></i>
+            </span>
+          </div>
+        </div>
+        <i class="fa-solid fa-bars sidebarBtn"></i>
+      </div>
+    
+      <ul class="sidebar-nav" id="sidebar-nav">
+  
+        <li class="nav-item">
+          <a class="nav-link " href="/cmms/index.html">
+            <img src="https://instanta.alphamead.com/assets/icons/in-dashboard-icon-white.svg" alt="">
+            <span>Dashboard</span>
+          </a>
+        </li> 
+        <!-- End Dashboard Nav -->
+  
+        <li class="nav-item">
+          <a class="nav-link" data-bs-target="#components-nav" data-bs-toggle="collapse" href="index.html">
+            <img src="https://instanta.alphamead.com/assets/icons/in-workorder-icon-white.svg" alt=""><span>Work</span><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+            <li>
+              <a href="#">
+                Work Request
+              </a>
+            </li>
+            <li>
+              <a href="components-accordion.html">
+                Work Order
+              </a>
+            </li>
+            <li>
+              <a href="components-badges.html">
+                Pending PPM
+              </a>
+            </li>
+            <li>
+              <a href="#" data-bs-target="#bola" data-bs-toggle="collapse">
+                Requisition <i class="bi bi-chevron-down ms-auto"></i>
+              </a>
+              <div class="sample">
+                <div id="bola" class="try collapse">
+                  <span><a href="">Payment Requisition</a></span>
+                  <span><a href="">Bulk Payment</a></span>
+                  <span><a href="">Requisition</a></span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="components-badges.html">
+                <span>PPM Setting</span>
+              </a>
+            </li>
+            <li>
+              <a href="components-badges.html">
+                <span>Budget</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Components Nav -->
+  
+        <li class="nav-item">
+          <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+          <img src="https://instanta.alphamead.com/assets/icons/in-asset-icon-white.svg" alt=""><span>Asset & Inventory</span><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+            <li>
+              <a href="/cmms/Assets & Inventory/Asset Register/assets.html">
+              </i><span>Asset Register</span>
+              </a>
+            </li>
+            <li>
+              <a href="/cmms/Assets & Inventory/Inventory Register/inventory.html">
+                <span>Inventory Register</span>
+              </a>
+            </li>
+            <li>
+              <a href="/cmms/Assets & Inventory/Item Request/index.html">
+              <span>Item Request</span>
+              </a>
+            </li>
+            <li>
+              <a href="/cmms/Assets & Inventory/Inventory Adjustment/index.html">
+                <span>Inventory Adjustment</span>
+              </a>
+            </li>
+            <li>
+              <a href="/cmms/Assets & Inventory/Transfer Form/index.html">
+                <span>Transfer Form</span>
+              </a>
+            </li>
+            <li>
+              <a href="/cmms/Assets & Inventory/Movement History/index.html">
+                <span>Movement History</span>
+              </a>
+            </li>
+            <li id="assets-report">
+              <a href="#" data-bs-target="#reference-nav" data-bs-toggle="collapse">
+                <span>Report</span><i class="bi bi-chevron-down ms-auto"></i>
+              </a>
+              <ul id="reports-nav" class="nav-content collapse " data-bs-parent="#assets-report">
+                <li><a href="/cmms/Assets & Inventory/Reports/Asset Report/index.html">Asset Performance Report</a></li>
+                <li><a href="/cmms/Assets & Inventory/Reports/Inventory Report/index.html">Inventory Summary Report</a></li>
+              </ul>
+            </li>
+            <li id="assets-reference">
+                <a href="#" data-bs-target="#reference-nav" data-bs-toggle="collapse">
+                  <span>Reference</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="reference-nav" class="nav-content collapse " data-bs-parent="#assets-reference">
+                  <li><a href="/cmms/Assets & Inventory/Reference/Category/index.html">Category</a></li>
+                  <li><a href="/cmms/Assets & Inventory/Reference/Subcategory/index.html">Subcategory</a></li>
+                  <li><a href="/cmms/Assets & Inventory/Reference/Model/index.html">Model</a></li>
+                  <li><a href="/cmms/Assets & Inventory/Reference/Manufacturer/index.html">Manufacturer</a></li>
+                  <li><a href="/cmms/Assets & Inventory/Reference/Warehouse/index.html">Warehouse</a></li>
+                  <li><a href="/cmms/Assets & Inventory/Reference/Unit of Measurement/index.html">Unit of Measurement</a></li>
+                </ul>
+              </li>
+          </ul>
+        </li>
+        <!-- End Forms Nav -->
+  
+        <li class="nav-item">
+          <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+          <img src="https://instanta.alphamead.com/assets/icons/in-procurement-icon-white.svg" alt=""><span>Procurement</span><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+            <li>
+              <a href="#">
+                <span>General Tables</span>
+              </a>
+            </li>
+            <li>
+              <a href="tables-data.html">
+              <span>Data Tables</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Tables Nav -->
+  
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+             <img src="https://instanta.alphamead.com/assets/icons/in-lease-icon-white.svg" alt=""><span>Lease</span><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+              <li>
+                <a href="/cmms/Lease/Lease/index.html">
+                 <span>Lease</span>
+                </a>
+              </li>
+              <li>
+                <a href="/cmms/Lease/Lease Invoice/index.html">
+                 <span>Lease Invoice</span>
+                </a>
+              </li>
+              <li id="lease-reference">
+                <a class="nav-link collapsed" data-bs-target="#lease-nav" data-bs-toggle="collapse" href="#">
+                  <span>Lease Reference</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="lease-nav" class="nav-content collapse " data-bs-parent="#lease-reference">
+                  <li>
+                    <a href="/cmms/Lease/Lease Reference/Agency/index.html">
+                     <span>Agency</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/cmms/Lease/Lease Reference/Solicitor/index.html">
+                      <span>Solicitor</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/cmms/Lease/Lease Reference/Fee Type/index.html">
+                      <span>Fee Type</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        <!-- End Charts Nav -->
+  
+        <li class="nav-item">
+          <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
+            <img src="https://instanta.alphamead.com/assets/icons/in-service-charge-icon-white.svg" alt=""><span>Service & Power Charge</span><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+            <li>
+              <a href="icons-bootstrap.html">
+              <span>Bootstrap Icons</span>
+              </a>
+            </li>
+            <li>
+              <a href="icons-remix.html">
+                <i class="bi bi-circle"></i><span>Remix Icons</span>
+              </a>
+            </li>
+            <li>
+              <a href="icons-boxicons.html">
+                <i class="bi bi-circle"></i><span>Boxicons</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Icons Nav -->
+  
+  
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="users-profile.html">
+            <img src="https://instanta.alphamead.com/assets/icons/in-visitor-icon-white.svg" alt=""><span>Visitor</span>
+          </a>
+        </li>
+        <!-- End Profile Page Nav -->
+  
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="pages-faq.html">
+            <img src="https://instanta.alphamead.com/assets/icons/in-space-booking-icon-white.svg" alt=""><span>Space Booking</span>
+          </a>
+        </li>
+        <!-- End F.A.Q Page Nav -->
+  
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="pages-contact.html">
+            <img src="https://instanta.alphamead.com/assets/icons/in-facility-icon-white.svg" alt=""><span>Facility</span>
+          </a>
+        </li>
+        <!-- End Contact Page Nav -->
+  
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#report-nav" data-bs-toggle="collapse" href="#">
+              <img src="https://instanta.alphamead.com/assets/icons/in-report-icon-white.svg" alt="">
+              <span>Report</span><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="report-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+              <li>
+                <a href="/cmms/Report/Scheduled Report/index.html">
+                 </i><span>Scheduled Report</span>
+                </a>
+              </li>
+              <li>
+                <a href="/cmms/Report/User Facility Report/index.html">
+                  <span>User Facility Report</span>
+                </a>
+              </li>
+              <li>
+                <a href="/cmms/Report/User Audit Report/index.html">
+                 <span>User Audit Report</span>
+                </a>
+              </li>
+              <li>
+                <a href="/cmms/Report/Usage Report/index.html">
+                  <span>Usage Report</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        <!-- End Register Page Nav -->
+  
+        <li class="nav-item">
+          <a class="nav-link collapsed" data-bs-target="#reference-nav" data-bs-toggle="collapse" href="#">
+            <img src="https://instanta.alphamead.com/assets/icons/in-reference-icon-white.svg" alt="">
+            <span>Reference</span><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul id="reference-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+            <li>
+              <a href="/cmms/Reference/User Management/index.html">
+               </i><span>User Management</span>
+              </a>
+            </li>
+            <li>
+              <a href="/cmms/Reference/Personnel/index.html">
+                <span>Personnel</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+               <span>Vendor</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>Client</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>Category</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>Department</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>Bank account</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>Unit of Measurement</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>Setting</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>Data Import</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Login Page Nav -->
+      </ul>
+    
+      </aside>
+      <!-- End Sidebar -->
+
+
+      <!---------Main content--------------->
+      <main id="main" class="main">
+        <!----------Header Section----------------->
+        <header class="header">
+          <nav>
+            <h3>Navbar</h3>
+          </nav>
+        </header>
+
+        <!------Personnel Heading---------->
+        <div class="personnel-heading">
+          <div class="personnel-heading_text">
+            <i class="fa-solid fa-sliders filter-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Filter"></i>
+            <span>
+              <i class="fa-solid fa-magnifying-glass" onclick="searchTable()"></i>
+              <input type="search" id="searchInput" placeholder="Search personnel...">
+            </span>
+            <h3><a href="">Personnel</a></h3>
+          </div>
+          <div class="personnel-heading_icons">
+            <i class="fa-solid fa-list" data-bs-toggle="tooltip" data-bs-placement="bottom" title="List view"></i>
+            <i class="fa-solid fa-table-cells" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Table view"></i>
+          </div>
+        </div>
+
+        <div class="empty-div"></div>
+
+          
+        <!-------------Personnel Main Content-------------------->
+        <div class="personnel-main_content">
+          <div class="personnel-sidebar">
+            <h5>Personnel</h5>
+            <div class="personnel-sidebar_controls">
+              <button>
+                <i class="fa-solid fa-plus"></i>
+                <span id="load-button" data-bs-toggle="modal" data-bs-target="#ExtralargeModal">New</span>
+              </button>
+              <i class="fa-solid fa-arrow-up-right-from-square export-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Export"></i>
+            </div>
+
+            <div class="personnel-sidebar_content" data-id="1">
+              <div class="personnel-name">
+                <span>Aji Abana</span>
+                <h6>Active</h6>
+              </div>
+              <div class="personnel-number">
+                <h6>0113</h6>
+                <h6></h6>
+              </div>
+            </div>
+
+            <div class="personnel-sidebar_content" data-id="2">
+              <div class="personnel-name">
+                <span>Peter Abang</span>
+                <h6>Inactive</h6>
+              </div>
+            </div>
+
+            <div class="personnel-sidebar_content" data-id="3">
+              <div class="personnel-name">
+                <span>Idris Olawale Abass</span>
+                <h6>Active</h6>
+              </div>
+              <div class="personnel-number">
+                <h6>151266</h6>
+                <h6></h6>
+              </div>
+            </div>
+
+            <div class="personnel-sidebar_content" data-id="4">
+              <div class="personnel-name">
+                <span>Deborah Abdul</span>
+                <h6>Active</h6>
+              </div>
+              <div class="personnel-number">
+                <h6>0109</h6>
+                <h6></h6>
+              </div>
+            </div>
+
+            <div class="personnel-sidebar_content" data-id="5">
+              <div class="personnel-name">
+                <span>Peter Adeola Abdul</span>
+                <h6>Active</h6>
+              </div>
+              <div class="personnel-number">
+                <h6>191882</h6>
+                <h6></h6>
+              </div>
+            </div>
+          </div>
+          <i class="fa-solid fa-bars personnel-sidebarBtn"></i>
+
+          <!--------Personnel Main Body------------>
+
+          <div class="personnel-main_body">
+            <div class="default-image" id="default-image">
+              <img src="/cmms/assets/img/in-empty-details-icon.svg" alt="">
+              <p>All personnel are sleeping!</p>
+            </div>
+
+            <div class="personnel-body_content">
+              <div class="personnel-type">
+                <div class="personnel-type_header">
+                  <h4>Detail</h4>
+                  <h5 data-bs-toggle="collapse" data-bs-target="#personnel-detail">Click to collapse</h5>
+                  <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div id="personnel-detail">
+                  <hr>
+                  <h6>Personal image</h6>
+                  <div class="personnel-type_body">
+                    <div class="personnel-type-image">
+                      <img src="images/default-personnel.png" alt="">
+                    </div>
+                    <div class="personnel-type_details">
+                      <div class="personnel-type-details">
+                        <h4>Staff number</h4>
+                        <p id="staff-number"></p>
+                      </div>
+  
+                      <div class="personnel-type-details">
+                        <h4>First name</h4>
+                        <p id="first-name"></p>
+                      </div>
+  
+                      <div class="personnel-type-details flex-basis">
+                        <h4>Middle name</h4>
+                        <p id="middle-name"></p>
+                      </div>
+  
+                      <div class="personnel-type-details">
+                        <h4>Last name</h4>
+                        <p id="last-name"></p>
+                      </div>
+  
+                      <div class="personnel-type-details">
+                        <h4>Facility</h4>
+                        <p id="personnel-facility"></p>
+                      </div>
+  
+                    </div>
+                  </div>
+
+                  <h6>Contact</h6>
+                  <div class="personnel-type_details">
+                    <div class="personnel-details">
+                      <h4>Phone no</h4>
+                      <p id="phone-number">07019999390</p>
+                    </div>
+
+                    <div class="personnel-details">
+                      <h4>Email</h4>
+                      <p></p>
+                    </div>
+
+                  </div>
+
+                  <h6>Category</h6>
+                  <div class="personnel-type_details">
+                    <div class="personnel-button">
+                      <button>Hvac system</button>
+                    </div>
+                  </div>
+
+                  <h6>Other details</h6>
+                  <div class="personnel-type_details">
+                    <div class="personnel-details">
+                      <h4>Facility/Location</h4>
+                      <p>Ultimate Apartment</p>
+                    </div>
+
+                    <div class="personnel-details">
+                      <h4>Status</h4>
+                      <p>Active</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="personnel-type">
+                <div class="personnel-type_header">
+                  <h4>Documents <i>(0)</i></h4>
+                  <h5 data-bs-toggle="collapse" data-bs-target="#personnel-document">Click to collapse</h5>
+                  <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div id="personnel-document">
+                  <hr>
+                  <div class="personnel-item">
+                    <div class="personnel-modal_image">
+                      <img src="/cmms/assets/img/movement-history.svg" alt="">
+                      <p>Not been keeping track!</p>
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+              </div>
+
+              <div class="personnel-type">
+                <div class="personnel-type_header">
+                  <h4>Work orders <i>(2)</i></h4>
+                  <h5 data-bs-toggle="collapse" data-bs-target="#personnel-work">Click to collapse</h5>
+                  <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div id="personnel-work">
+                  <hr>
+                  <div class="personnel-item_table">
+                    <table class="personnel-table">
+                      <thead>
+                        <tr>
+                          <th>Submitted date</th>
+                          <th>Life time</th>
+                          <th>Started date</th>
+                          <th>Due date</th>
+                          <th>Resource</th>
+                          <th>Cost</th>
+                          <th>Escalated to</th>
+                          <th>Status</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td>2021-05-24 17:55 PM</td>
+                          <td>4d</td>
+                          <td>2021-05-20 00:00 AM</td>
+                          <td>2021-05-20 00:00 AM</td>
+                          <td>Peter Adeola Abdul</td>
+                          <td>107,500</td>
+                          <td></td>
+                          <td>Closed</td>
+                        </tr>
+
+                        <tr>
+                          <td>2020-07-17 12:49 PM</td>
+                          <td>56d, 17m</td>
+                          <td>2020-09-11 00:00 AM</td>
+                          <td>2021-05-12 00:00 AM</td>
+                          <td>Peter Adeola Abdul</td>
+                          <td>0</td>
+                          <td></td>
+                          <td>Closed</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                </div>
+              </div>
+
+              <div class="personnel-type">
+                <div class="personnel-type_header">
+                  <h4>Category <i>(1)</i></h4>
+                  <h5 data-bs-toggle="collapse" data-bs-target="#personnel-category">Click to collapse</h5>
+                  <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div id="personnel-category">
+                  <hr>
+                  <div class="personnel-type_details">
+                    <div class="personnel-category-container">
+                      <div class="personnel-button">
+                        <button>Payment Request</button>
+                      </div>
+
+                      <div class="personnel-button">
+                        <button>Site Manager</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="personnel-type">
+                <div class="personnel-type_header">
+                  <h4>History <i>(0)</i></h4>
+                  <h5 data-bs-toggle="collapse" data-bs-target="#personnel-history">Click to collapse</h5>
+                  <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div id="personnel-history">
+                  <hr>
+                  <div class="personnel-item"></div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+          
+
+          <!----------Modal for a new personnel----------->
+          <div class="modal fade" id="ExtralargeModal" tabindex="-1">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">New personnel</h5>
+                  <div class="modal-buttons">
+                    <button>
+                      <i class="fa-solid fa-check"></i>
+                      Done
+                    </button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                </div>
+    
+                <div class="modal-body">
+                  <div class="modal-content">
+                    <div class="modal-content_header" onmouseover="showIcons()" onmouseout="hideIcons()">
+                      <h4>Detail</h4>
+                      <h5 data-bs-toggle="collapse" data-bs-target="#personal_modal-detail">Click to collapse</h5>
+                      <div class="modal-content_header-icons">
+                        <i class="fa-solid fa-expand fullscreen" onclick="toggleModalSize()" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Fullscreen"></i>
+                        <i class="fa-solid fa-window-minimize minimized" onclick="toggleMiniSize()" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Minimize"></i> 
+                      </div>
+                      <i class="fa-solid fa-chevron-left arrow" onmouseover="showIcons()" onmouseout="hideIcons()"></i>
+                    </div>
+    
+                    
+                    <div id="personal_modal-detail">
+                      <hr>
+    
+                      <div class="modal-content_body">
+                        <h5>Personal Image</h5>
+                        <div class="modal-personal_image">
+                          <img src="images/default-personnel.png" alt="">
+                          <form action="">
+                            <div class="personnel-content_inputs">
+                              <div class="personnel-content_input">
+                                <label for="personnel_input-number">Staff number</label><br>
+                                <input type="text" name="personnel_input-number" id="personnel_input-number">
+                              </div>
+
+                              <div class="personnel-content_input">
+                                <label for="personnel_input-first">First name</label><br>
+                                <input type="text" name="personnel_input-first" id="personnel_input-first">
+                              </div>
+
+                              <div class="personnel-content_input">
+                                <label for="personnel_input-middle">Middle name</label><br>
+                                <input type="text" name="personnel_input-middle" id="personnel_input-middle">
+                              </div>
+
+                              <div class="personnel-content_input">
+                                <label for="personnel_input-last">Last name</label><br>
+                                <input type="text" name="personnel_input-last" id="personnel_input-last">
+                              </div>
+
+                              <div class="personnel-content_input">
+                                <label for="personnel_input-facility">Facility</label><br>
+                                <input type="text" name="personnel_input-facility" id="personnel_input-facility">
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+
+                        <h5>Contact</h5>
+                        <form action="">
+                          <div class="personnel-content_inputs">
+
+                            <div class="personnel-content_input">
+                              <label for="personnel_input-phone">Phone no</label><br>
+                              <input type="text" name="personnel_input-phone" id="personnel_input-phone">
+                            </div>
+
+                            <div class="personnel-content_input">
+                              <label for="personnel_input-email">Email</label><br>
+                              <input type="text" name="personnel_input-email" id="personnel_input-email">
+                            </div>
+                          </div>
+                        </form>
+
+                        <h5>Other details</h5>
+                        <form action="">
+                          <div class="personnel-content_inputs">
+
+                            <div class="personnel-content_input">
+                              <label for="personnel_input-location">Facility/Location</label><br>
+                              <select name="personnel_input-location" id="personnel_input-location">
+                                <option value="Select">Selected</option>
+                              </select>
+                            </div>
+
+                            <div class="personnel-content_input">
+                              <label for="personnel_input-status">Status</label><br>
+                              <select name="personnel_input-status" id="personnel_input-status">
+                                <option value="Select">Selected</option>
+                              </select>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="modal-content">
+                    <div class="modal-content_header" onmouseover="showIcons()" onmouseout="hideIcons()">
+                      <h4>Documents <i>(0)</i></h4>
+                      <h5 data-bs-toggle="collapse" data-bs-target="#personnel_modal-document">Click to collapse</h5>
+                      <div class="modal-content_header-icons">
+                        <i class="fa-solid fa-expand fullscreen" onclick="toggleModalSize()" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Fullscreen"></i>
+                        <i class="fa-solid fa-window-minimize minimized" onclick="toggleMiniSize()" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Minimize"></i> 
+                      </div>
+                      <i class="fa-solid fa-chevron-left arrow" onmouseover="showIcons()" onmouseout="hideIcons()"></i>
+                    </div>
+  
+                    <div class="personnel-modal_body collapse" id="personnel_modal-document">
+                      <div class="personnel-modal_add">
+                        <button>
+                          <i class="fa-solid fa-plus"></i>
+                          <span>Add document</span>
+                        </button>
+
+                        <span>
+                          <input type="checkbox" name="expiry-alert" id="expiry-alert">
+                          <label for="expiry-alert">Send expiry alert for documents</label>
+                        </span>
+                      </div>
+                      <div class="personnel-modal_image">
+                        <img src="/cmms/assets/img/movement-history.svg" alt="">
+                        <p>I've not been keeping track!</p>
+                      </div>
+                    </div>
+  
+                  </div>
+
+                  <div class="modal-content">
+
+                    <div class="modal-content_header" onmouseover="showIcons()" onmouseout="hideIcons()">
+                      <h4>Work orders <i>(0)</i></h4>
+                      <h5 data-bs-toggle="collapse" data-bs-target="#personnel_modal-work">Click to collapse</h5>
+                      <div class="modal-content_header-icons">
+                        <i class="fa-solid fa-expand fullscreen" onclick="toggleModalSize()" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Fullscreen"></i>
+                        <i class="fa-solid fa-window-minimize minimized" onclick="toggleMiniSize()" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Minimize"></i> 
+                      </div>
+                      <i class="fa-solid fa-chevron-left arrow" onmouseover="showIcons()" onmouseout="hideIcons()"></i>
+                    </div>
+  
+                    <div class="personnel-item collapse" id="personnel_modal-work"></div>
+                  </div>
+
+
+                  <div class="modal-content">
+                    <div class="modal-content_header" onmouseover="showIcons()" onmouseout="hideIcons()">
+                      <h4>Category <i>(0)</i></h4>
+                      <h5 data-bs-toggle="collapse" data-bs-target="#personnel_modal-category">Click to collapse</h5>
+                      <div class="modal-content_header-icons">
+                        <i class="fa-solid fa-expand fullscreen" onclick="toggleModalSize()" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Fullscreen"></i>
+                        <i class="fa-solid fa-window-minimize minimized" onclick="toggleMiniSize()" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Minimize"></i> 
+                      </div>
+                      <i class="fa-solid fa-chevron-left arrow" onmouseover="showIcons()" onmouseout="hideIcons()"></i>
+                    </div>
+  
+                    <div class="personnel-modal_body collapse" id="personnel_modal-category">
+                      <div class="personnel-modal_add">
+                        <span>
+                          <input type="checkbox" name="expiry-alert" id="expiry-alert">
+                          <label for="expiry-alert">Access to all categories</label>
+                        </span>
+                      </div>
+
+                      <form action="">
+                        <input list="categories" name="category" placeholder="Select access" id="personnel-datalist">
+                        <datalist id="categories">
+                          <option value="Housekeeping">
+                          <option value="Extra low voltage (elv)">
+                          <option value="Corporate branding">
+                          <option value="Generator (mechanical and electrical)">
+                          <option value="Cleaning and janitorial">
+                        </datalist>
+                      </form>
+                      
+                    </div>
+  
+                  </div>
+                </div>
+
+                
+                
+              </div>
+              
+
+              
+            </div>
+            </div>
+
+        
+        
+      </main>
+      
+      <script src="script.js"></script>
+    </body>
+</html>
